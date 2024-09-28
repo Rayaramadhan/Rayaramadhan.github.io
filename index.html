@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Nama</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raya Ramadhan</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="Asset/Vector.png" type="image/x-icon" />
+
+    <!-- Link ke CSS file -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <h1>Muhammad Raya Ramadhan</h1>
-    <p>1202223050</p>
-    <p>S1-Sistem Informasi</p>
+    <!-- Container utama -->
+    <div class="profile-container">
+      <!-- Gambar profil -->
+      <div class="profile-image">
+        <img src="Asset/raya.jpg" alt="Profile Picture" />
+      </div>
+
+      <!-- Teks perkenalan -->
+      <div class="introduction">
+        <h1>HOLLA ALL 👋</h1>
+        <p>
+          Pekenalkan aku <b>Muhammad Raya Ramadhan</b>
+          <br />1202223050<br />SI4610
+        </p>
+      </div>
+
+<!-- Ikon media sosial -->
+<div class="social-icons">
+  <a href="https://www.instagram.com/rayaramadann/" target="_blank">
+      <img src="Asset/IG.png" alt="Instagram" />
+  </a>
+  <a href="https://www.linkedin.com/in/muhammad-raya-ramadhan/" target="_blank">
+      <img src="Asset/IK.png" alt="LinkedIn" />
+  </a>
+</div>
+
+    <!-- Footer dengan tanggal dan waktu -->
+    <footer>
+      <p>Current Date and Time: <span id="datetime"></span></p>
+    </footer>
+
+    <!-- Script untuk tanggal dan waktu -->
+    <script>
+      const dateTime = new Date();
+      document.getElementById("datetime").innerText = dateTime.toLocaleString();
+    </script>
   </body>
 </html>
